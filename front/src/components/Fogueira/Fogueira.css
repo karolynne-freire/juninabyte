@@ -9,51 +9,33 @@
 
   .tronco {
     position: absolute;
-    bottom: 0;
-    width: 80px;      
-    height: 24px;     
-    background: linear-gradient(135deg, #7a4a2a, #5c381b);
-    border-radius: 40px / 20px;  
-    box-shadow:
-      inset 0 0 8px #4a2d12,
-      0 2px 4px rgba(0, 0, 0, 0.3);
-    transform-origin: center center;
-    margin-bottom: 50px;
-  }
-  
-  .tronco::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 8px;
-    width: 4px;
+    width: 80px;
     height: 18px;
-    background:
-      repeating-linear-gradient(
-        45deg,
-        rgba(255,255,255,0.1),
-        rgba(255,255,255,0.1) 2px,
-        transparent 3px,
-        transparent 6px
-      );
-    border-radius: 40px / 20px;
+      background: linear-gradient(
+      135deg,
+      #8b5e3c 30%, 
+      #5c381b 100%
+    );
+    border-radius: 40px / 9px;
+      box-shadow:
+      inset 0 0 5px #4a2d12,
+      0 2px 4px rgba(0, 0, 0, 0.3);
   }
-  
-  /* Posicionamento dos troncos cruzados */
-  .tronco1 {
-    left: 20%;
-    transform: rotate(30deg);
+    
+ 
+.tronco1 {
+    left: 40%; top: 60%; transform: rotate(30deg);
   }
-  
   .tronco2 {
-    left: 40%;
-    transform: rotate(-30deg);
+    left: 15%; top: 60%; transform: rotate(-30deg);
+  }
+  .tronco3 {
+    left: 30%; top: 65%; transform: rotate(10deg);
+  }
+  .tronco4 {
+    left: 30%; top: 65%; transform: rotate(-20deg);
   }
   
-  .tronco3 {
-    left: 60%;
-    transform: rotate(20deg);
-  }
   
   .chama {
     position: absolute;

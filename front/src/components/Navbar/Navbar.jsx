@@ -17,7 +17,7 @@ export function Navbar() {
       <a href="#">Música</a>
       <a href="#">Fogos</a>
       <button className="theme-toggle" onClick={alternarTema}>
-  {theme === 'light' ? '☀️' : '🌙'}
+  {theme === 'light' ? '🔥' : '🎈'}
 </button>
     </nav>
   );
