@@ -4,6 +4,7 @@ import { Footer } from './components/Footer/Footer';
 import { Bandeirinhas } from './components/Bandeirinhas/Bandeirinhas';
 import { Header } from './components/Header/Header';
 import { Main } from './components/Main/Main';
+import { Historia } from './components/Historia/Historia';
 
 
 export function App() {
@@ -31,6 +32,7 @@ export function App() {
       <Bandeirinhas />
       <Header />
       <Main />
+      <Historia/>
       <Footer />
         </div>
       )}

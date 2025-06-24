@@ -1,0 +1,73 @@
+.historia {
+    padding: 40px;
+    background-color: #fff3e0;
+    border-radius: 16px;
+    margin: 40px auto;
+    max-width: 1150px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  }
+  
+  .historia h2 {
+    font-size: 1.8rem;
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+  }
+  
+  .historia-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .historia-content img {
+    margin-top: -70px;
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.6s ease;
+    cursor: pointer;
+  }
+  
+  .historia-content img:hover {
+    transform: rotate(20deg);
+    filter: drop-shadow(0 0 8px var(--cor-principal));
+    z-index: 10;
+    position: relative;
+  }
+  
+  .historia-text {
+    flex: 1 1 300px;
+    font-size: 1rem;
+    color: var( --barra-bg);
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .foguinho {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: fogoAnim 1.5s ease forwards;
+    opacity: 1;
+    box-shadow: 0 0 8px currentColor, 0 0 15px currentColor;
+  }
+  
+  @keyframes fogoAnim {
+    0% {
+      transform: translateY(0) scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-60px) scale(1.5);
+      opacity: 0;
+    }
+  }
