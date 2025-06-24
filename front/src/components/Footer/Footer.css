@@ -3,7 +3,7 @@ footer {
     padding: 20px;
     background-color: var(--cor-principal);
     color: var(--cor-texto);
-      position: fixed;
+      /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;

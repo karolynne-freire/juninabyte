@@ -1,0 +1,79 @@
+/* ==========================
+  Header
+========================== */
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+  }
+  header h1 {
+    font-size: 5rem;
+    margin-top: -20px;
+    color: #ff9800;
+  }
+  
+  
+  .header .slogan {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: -50px;
+    color: #ff9800;
+  
+    /* Começa invisível e sobe */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: subir 1.5s ease forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes subir {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .arrasta-pe {
+    position: relative;
+    margin: 20px auto 0;
+    width: 100px;
+    height: 4px;
+    background-color: #ff6600;
+    border-radius: 2px;
+    animation: arrasta 0.3s infinite alternate;
+  }
+  
+  @keyframes arrasta {
+    from {
+      transform: translateX(-3px);
+    }
+    to {
+      transform: translateX(3px);
+    }
+  }
+  
+  .code-line {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0 0;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .code-line::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    animation: piscar 1s infinite;
+  }
+  
+  @keyframes piscar {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }

@@ -1,19 +1,29 @@
+/* index.css ou global.css */
 :root {
+  /* Tipografia e fonte padrão */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
+  /* Suporte a temas claro e escuro */
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
 
-  
+  /* Variáveis para o tema claro */
+  --bg-color: #ffffff;
+  --text-color: #333;
   --cor-principal: #ff9800;
   --cor-texto: #fff;
+
+  /* Cor de destaque para links */
+  --link-hover: #ffe57f;
 }
+
+[data-theme='dark'] {
+  /* Variáveis para o tema escuro */
+  --bg-color: #222;
+  --text-color: #f0f0f0;
+}
+
 
 
 html {
@@ -30,6 +40,9 @@ body {
   linear-gradient(90deg, rgba(255, 152, 0, 0.15) 1px, transparent 1px),
   linear-gradient(rgba(255, 152, 0, 0.15) 1px, transparent 1px);
   background-size: 40px 40px;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);  
 }
 
 
